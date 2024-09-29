@@ -35,9 +35,9 @@ const AudioPlayer = ({ song, mini }) => {
     const value = Math.min(
       Math.max(parseFloat(event.target.value), 0),
       duration
-    ); // Clamp the value
-    audioRef.current.currentTime = value; // Update the audio current time
-    setCurrentTime(value); // Update the state for current time
+    );
+    audioRef.current.currentTime = value;
+    setCurrentTime(value);
   };
 
   const sliderStyles = {

@@ -1,4 +1,3 @@
-// src/pages/Home.js
 import React, { useState, useEffect } from "react";
 import { Box, Flex, Image } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";

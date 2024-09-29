@@ -1,8 +1,7 @@
-// MusicStack.jsx
 import React from "react";
 import { Avatar, Button, Flex, Text } from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-import useAudioDuration from "../utils/GetAudioDuration"; // Updated import
+import { useNavigate } from "react-router-dom";
+import useAudioDuration from "../utils/GetAudioDuration";
 import { useHexToRgba } from "../utils/useHexToRgba";
 
 const MusicStack = ({
@@ -14,12 +13,12 @@ const MusicStack = ({
   accent,
   onSetAccentColor,
 }) => {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
   const duration = useAudioDuration(url);
 
   const handleClick = () => {
     onSetAccentColor(accent);
-    navigate(`/${id}`); // Navigate to the music details page with the id
+    navigate(`/${id}`);
   };
 
   return (
@@ -31,7 +30,7 @@ const MusicStack = ({
       alignItems={"center"}
       borderRadius={10}
       as={Button}
-      onClick={handleClick} // Use the handleClick function
+      onClick={handleClick}
       _hover={{
         bg: useHexToRgba("#F7931A", 0.1),
       }}
