@@ -69,7 +69,7 @@ vite.config.js
 8. **Audio Duration Calculation** - `GetAudioDuration.jsx`: Calculates and displays the duration of tracks in the player.
 9. **Dynamic Styling** - `useHexToRgba.jsx`: Converts hex colors to RGBA for dynamic background color changes.
 10. **API Integration for Song Data** - `useSongData.js`: Fetches song data from an API to populate the music player and list.
-11. ** Background Dynamic** - change background According to cover image.
+11. **Background Dynamic** - change background According to cover image.
 
 ## TechStack
 
