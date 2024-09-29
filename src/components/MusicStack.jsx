@@ -41,7 +41,12 @@ const MusicStack = ({
         src={`https://cms.samespace.com/assets/${cover}`}
       />
       <Flex alignItems={"center"} justifyContent={"space-between"} w={"100%"}>
-        <Flex flexDirection={"column"} columnGap={2} ml={3}>
+        <Flex
+          flexDirection={"column"}
+          columnGap={2}
+          ml={3}
+          alignItems={"flex-start"}
+        >
           <Text fontSize={"18px"}>{name}</Text>
           <Text fontSize={"14px"} opacity={0.7}>
             {artist}
